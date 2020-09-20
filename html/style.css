@@ -1,0 +1,126 @@
+﻿.main {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+}
+
+.hudCar {
+  display: none;
+  position: absolute;
+  left: 21%;
+  bottom: 4.5%;
+  display: flex;
+}
+.progress {
+  -webkit-transition: 0.35s stroke-dashoffset;
+  -o-transition: 0.35s stroke-dashoffset;
+  transition: 0.35s stroke-dashoffset;
+  -webkit-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.progressplayer {
+  -webkit-transition: 0.35s stroke-dashoffset;
+  -o-transition: 0.35s stroke-dashoffset;
+  transition: 0.35s stroke-dashoffset;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.backgroundCircle {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.mph {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.fuel {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  background-size: 45% 45%;
+  opacity: 1;
+}
+
+.counter {
+  height: 100%;
+  width: 100%;
+}
+
+.counter .counter2 {
+  position: relative;
+  height: 200%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.counter .counter2 div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+.counter .counter2 div svg {
+  opacity: 0.2;
+}
+.counter .counter2 .active svg {
+  opacity: 0.8;
+}
+
+.counter .counter2 .speedometer {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.counter .counter2 .speedometer svg {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: scale(2) translate(-25%, -25%);
+  -ms-transform: scale(2) translate(-25%, -25%);
+  transform: scale(2) translate(-25%, -25%);
+}
+
+.counter .counter2 .speedometer .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+.counter .counter2 .speedometer .text .speed {
+  color: white;
+  font-size: 27px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+.wskazniki {
+  display: flex;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+}
