@@ -13,24 +13,31 @@
       $("body").fadeOut();
       break;
     case "voice-color":
-      Progress(event.data.isTalking, ".voiceon");
+      if (event.data.isTalking) {
+        $("#voiceon").fadeIn();
+      } else {
+        $("#voiceon").fadeOut();
+      }
       break;
     case "voice":
       if (event.data.prox === 0) {
         $("#voiceshout").fadeIn();
         $("#voicenormal").fadeIn();
         $("#voicewhisper").fadeIn();
+        $("#box").fadeIn();
       } else if (event.data.prox === 1) {
         $("#voicenormal").fadeIn();
         $("#voiceshout").fadeOut();
         $("#voicewhisper").fadeIn();
+        $("#box").fadeIn();
       } else if (event.data.prox === 2) {
         $("#voicewhisper").fadeIn();
         $("#voicenormal").fadeOut();
         $("#voiceshout").fadeOut();
+        $("#box").fadeIn();
       }
       break;
-    case "car":
+    /* case "car":
       if (event.data.showhud == true) {
         $(".hudCar").fadeIn();
         setProgressSpeed(event.data.speed, ".progress-speed");
@@ -39,6 +46,13 @@
         $(".hudCar").fadeOut();
       }
       break;
+    case "seatbelt":
+      if (event.data.seatbelt) {
+        $(".car-seatbelt-info img").attr("src", "./seatbelt-on.png");
+      } else {
+        $(".car-seatbelt-info img").attr("src", "./seatbelt.png");
+      }
+      break; */
   }
 });
 

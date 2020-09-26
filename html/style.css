@@ -12,6 +12,7 @@
   bottom: 4.5%;
   display: flex;
 }
+
 .progress {
   -webkit-transition: 0.35s stroke-dashoffset;
   -o-transition: 0.35s stroke-dashoffset;
@@ -123,4 +124,11 @@
   position: absolute;
   top: 45%;
   left: 15%;
+}
+
+.car-seatbelt-info img {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  width: 2.5vh;
 }

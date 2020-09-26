@@ -7,7 +7,7 @@
     <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
-    <div class="hudCar">
+    <!--<div class="hudCar">
       <div class="counter">
         <div class="counter2">
           <div class="speedometer">
@@ -72,7 +72,7 @@
               stroke-dashoffset="0"
             />
             <image
-              href="img/vehicle/fuel.png"
+              href="img/fuel.png"
               height="20"
               width="20"
               x="10"
@@ -80,8 +80,11 @@
             ></image>
           </svg>
         </div>
+        <div class="car-seatbelt-info">
+          <img src="./seatbelt.png" />
+        </div>
       </div>
-    </div>
+    </div>-->
     <div class="main">
       <svg class="circle" width="53" height="53">
         <circle
@@ -97,7 +100,7 @@
           stroke-dashoffset="0"
         />
         <image
-          href="img/vehicle/health.png"
+          href="img/health.png"
           height="25"
           width="25"
           x="14"
@@ -119,7 +122,7 @@
           stroke-dashoffset="0"
         />
         <image
-          href="img/vehicle/armor.png"
+          href="img/armor.png"
           height="25"
           width="25"
           x="14"
@@ -141,7 +144,7 @@
           stroke-dashoffset="0"
         />
         <image
-          href="img/vehicle/thirst.png"
+          href="img/thirst.png"
           height="25"
           width="25"
           x="14"
@@ -163,7 +166,7 @@
           stroke-dashoffset="0"
         />
         <image
-          href="img/vehicle/hunger.png"
+          href="img/hunger.png"
           height="25"
           width="25"
           x="14"
@@ -172,18 +175,19 @@
       </svg>
 
       <svg class="circle" width="53" height="53">
+        <circle id="box" fill="#000000" r="24" cx="26" cy="27" />
         <circle
-          class="progressplayer voiceon"
+          id="voiceon"
           stroke="#fff"
           stroke-width="4"
           style="stroke-opacity: 0.9"
-          fill="#000000"
           r="24"
           cx="26"
-          cy="26"
-          stroke-dasharray="70 30"
+          cy="27"
+          stroke-dasharray="360"
           stroke-dashoffset="0"
         />
+
         <circle
           id="voiceshout"
           stroke="#fff"
